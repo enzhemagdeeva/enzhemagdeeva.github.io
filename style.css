@@ -1,0 +1,99 @@
+body {
+    margin: 3em 2em 2em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    letter-spacing: 1px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    opacity: .6;
+}
+
+.background img {
+    height: 100vh;
+}
+
+/*****************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    border-radius: 50%;
+    border: 3px solid #4DCCB5D4;
+    background-image: url("avatar.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.status {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.status li {
+    display: flex;
+    align-items: center;
+    padding-bottom: .5em;
+}
+
+.status li::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("icon.png");
+    background-repeat: no-repeat;
+    margin-right: 1em;
+}
+
+.status li.bold {
+    font-weight: bold;
+}
+
+
+
+
+/*********************************************************/
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.buttons a {
+    width: 100%;
+}
+
+.buttons button {
+    /*background-color: #4DCCB5D4;*/
+    background-color: #4DCCB5;
+    color: white;
+    width: 100%;
+    min-height: 4em;
+    margin-top: 1em;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    letter-spacing: 2px;
+    padding: 15px;
+    text-transform: uppercase;
+}
